@@ -5,10 +5,12 @@ import Tailwind from "./icons/Tailwind.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 import ReactJS from "./icons/ReactJS.astro"
+import Spring from "./icons/Spring.astro"
+import Jwt from "./icons/Jwt.astro"
 
 const TAGS = {
-  NEXT: {
-    name: "React.js",
+  REACT: {
+    name: "React JS",
     class: " bg-[#003159] text-white",
     icon: ReactJS,
   },
@@ -16,6 +18,16 @@ const TAGS = {
     name: "Tailwind CSS",
     class: "bg-[#003159] text-white",
     icon: Tailwind,
+  },
+  SPRING: {
+    name: "Spring",
+    class: "bg-[#004a00] text-white",
+    icon: Spring,
+  },
+  JWT: {
+    name: "JWT",
+    class: "bg-[#004a00] text-white",
+    icon: Jwt,
   },
 }
 const PROJECTS = [
@@ -26,7 +38,7 @@ const PROJECTS = [
   link:"https://s14-34-ft-java.vercel.app/",
   github: "https://github.com/PatEche/s14-34-ft-java",
   image:"/projects/HappyPaws.png",
-  tags:[TAGS.NEXT, TAGS.TAILWIND],
+  tags:[TAGS.REACT, TAGS.TAILWIND, TAGS.SPRING, TAGS.JWT],
 
 },
 
@@ -37,15 +49,17 @@ const PROJECTS = [
     link: "",
     github: "https://github.com/PatEche/c16-86-ft-java",
     image: "/projects/Estacsis.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SPRING,TAGS.JWT],
   },
   {
     title: "Tecno Tienda",
     description:
       "En Tecno Tienda, nos especializamos en ofrecerte lo último en dispositivos electrónicos de última generación y accesorios innovadores que hacen tu vida más fácil. Nuestro compromiso es brindarte productos de alta calidad a precios competitivos.",
-    link: "https://tecnotienda.vercel.app/",
+     
+      descripcion2:" alkalalalaalalla",
+      link: "https://tecnotienda.vercel.app/",
     image: "/projects/tecnotienda.png",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.SPRING,TAGS.JWT],
   },
 ]
 ---
@@ -78,7 +92,7 @@ const PROJECTS = [
           ))}
         </ul>
 
-      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>
+      <div class="mt-2 text-gray-700 dark:text-gray-400">{description}</div>     
       <footer class="flex items-end justify-start mt-4 gap-x-4">
           {github && (
             <LinkButton href={github}>
