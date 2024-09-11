@@ -1,0 +1,54 @@
+---
+const personalImageAlt = "Patricio Echeverria"
+import Badge from "@/components/Badge.astro"
+import LinkedInIcon from "@/components/icons/LinkedIn.astro"
+import MailIcon from "@/components/icons/Mail.astro"
+import SocialPill from "@/components/SocialPill.astro"
+import Download from "./icons/Download.astro"
+
+---
+
+<div class="max-w-xl">
+  <div class="flex gap-4 mb-4">
+    <img
+      class="rounded-full shadow-lg size-28"
+      src="/me.png"
+      alt={personalImageAlt}
+    />
+    <a
+      href="https://linkedin.com/in/patricio-luis-echeverria"
+      target="_blank"
+      rel="noopener"
+      class="flex items-center transition md:justify-center md:hover:scale-105"
+    >
+      <Badge>Disponible para trabajar</Badge>
+    </a>
+  </div>
+  <h1
+    class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+  >
+    Hola, soy Patricio
+  </h1>
+  <p
+    class="mt-6 text-xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300"
+  >
+    
+      <strong> Analista Universitario En Sistemas De Computación</strong> y estudiante de 
+      <strong>Licenciatura en Informática</strong>
+     de Buenos Aires, Argentina. Especializado en el desarrollo de software.
+  </p>
+  <nav class="flex flex-wrap gap-4 mt-8">
+    <SocialPill href="mailto:echeverriaple@gmail.com">
+      <MailIcon class="size-4" />
+      Contáctame
+    </SocialPill>
+    <SocialPill href="https://linkedin.com/in/patricio-luis-echeverria">
+      <LinkedInIcon class="size-4" />
+      LinkedIn
+    </SocialPill>
+    <SocialPill href="https://drive.google.com/file/d/1fBp4MNDP70osW_WwuEEMRCbfCU8w8mWe/view?usp=drive_link">
+      <Download class="size-4" />
+      Descargar CV
+    </SocialPill>
+  </nav>
+</div>

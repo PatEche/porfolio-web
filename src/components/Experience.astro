@@ -1,0 +1,40 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  
+  {
+    date: "Marzo 2024",
+    title: "Desarrollador Backend",
+    company: "No Country",
+    description:
+      
+      "Participe del análisis, diseño y desarrollo del backend para una aplicación de estacionamiento de vehículos. Trabajé en colaboración con un equipo multidisciplinario bajo la metodología ágil SCRUM. Se utilizó Jira para la gestión de tareas.", 
+      
+      
+      
+       
+ 
+    link: "https://github.com/PatEche/c16-86-ft-java",
+  },
+  {
+    date: "Agosto 2023",
+    title: "Desarrollador Java",
+    company: "Softtek",
+    description:
+      "Durante el proceso de capacitación en la academia trabajé junto a un equipo de desarrolladores bajo metodologías ágiles logrando como producto final un E-Commerce en el cual pude implementar todas las tecnologías vistas. Logro clave: En la última etapa tuve el rol de Team Leader",
+      
+      link: "https://tecnotienda.vercel.app/",
+      
+    },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
