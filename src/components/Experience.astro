@@ -3,27 +3,35 @@ import ExperienceItem from "./ExperienceItem.astro"
 const EXPERIENCE = [
   
   {
-    date: "Marzo 2024",
-    title: "Desarrollador Backend",
+    date: "2024-2024",
+    title: "Desarrollador Java",
     company: "No Country",
-    description:
+    description: 
       
-      "Participé en el análisis, diseño y desarrollo del backend para una aplicación de gestión de estacionamientos. Trabajé en colaboración con un equipo multidisciplinario bajo la metodología ágil Scrum, utilizando Jira para la planificación de tareas.", 
+      "Desarrollo integral del backend para aplicación de gestión de estacionamientos. Optimización de consultas a la base de datos, reduciendo tiempos de respuesta en un 45%. Mejora del 30% en la tasa de éxito de operaciones mediante el rediseño de la capa de persistencia.",
+
+  
+      link: "https://github.com/PatEche/c16-86-ft-java",
       
-      
-      
-       
- 
-    link: "https://github.com/PatEche/c16-86-ft-java",
   },
   {
-    date: "Agosto 2023",
-    title: "Desarrollador Java , Team Leader",
+    date: "2023-2024",
+    title: "Desarrollador Web Full Stack",
     company: "Softtek",
     description:
-      "Durante el proceso de capacitación en la academia de Softtek, trabajé junto a un equipo de desarrolladores bajo metodologías ágiles. Como resultado, desarrollamos un e-commerce donde pude aplicar todas las tecnologías aprendidas. Logro destacado: asumí el rol de Team Leader en la etapa final del proyecto.",
+      "Desarrollé junto a un grupo de desarrolladores un ecommerce utilizando Java, Spring Boot, Spring Security y Spring Data. Implementé la autenticación y autorización de la app. Lideré al equipo de desarrollo en la fase final logrando mayor organización del código y del trabajo colaborativo.",
       
       link: "https://tecnotienda.vercel.app/",
+      
+    },
+    {
+    date: "2007-2013 ",
+    title: "Administrador De Redes - SysAdmin",
+    company: "Cooperativa de electricidad ltda.",
+    description:
+      "Gestión integral del data center on-premise, garantizando disponibilidad y continuidad operativa. Administración de servidores, redes internas y servicios críticos para clientes. Configuración, monitoreo y resolución de incidentes en infraestructura.",
+      
+      link: "https://www.cooplezama.com.ar/",
       
     },
 ]
@@ -32,9 +40,11 @@ const EXPERIENCE = [
 <ol class="relative mt-16">
   {
     EXPERIENCE.map((experience) => (
-      <li class="">
+      <li class="">        
         <ExperienceItem {...experience} />
+        
       </li>
     ))
   }
+   
 </ol>
