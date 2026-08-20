@@ -3,11 +3,10 @@ import ExperienceItem from "./ExperienceItem.astro"
 const EXPERIENCE = [
   
   {
-    date: "2024-2024",
+    date: "2024-2025",
     title: "Desarrollador Java",
     company: "No Country",
-    description: 
-      
+    description:      
       "Desarrollo integral del backend para aplicación de gestión de estacionamientos. Optimización de consultas a la base de datos, reduciendo tiempos de respuesta en un 45%. Mejora del 30% en la tasa de éxito de operaciones mediante el rediseño de la capa de persistencia.",
 
   
@@ -25,7 +24,7 @@ const EXPERIENCE = [
       
     },
     {
-    date: "2007-2013 ",
+    date: "2007-2023 ",
     title: "Administrador De Redes - SysAdmin",
     company: "Cooperativa de electricidad ltda.",
     description:
@@ -36,8 +35,8 @@ const EXPERIENCE = [
     },
 ]
 ---
-
-<ol class="relative mt-16">
+<ol class="relative mt-6 border-l border-gray-200 dark:border-gray-700 
+  [&>li]:mb-10 [&>li]:ml-6 [&>li]:last:mb-0">
   {
     EXPERIENCE.map((experience) => (
       <li class="">        
